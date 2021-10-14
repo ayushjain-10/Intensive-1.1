@@ -1,6 +1,8 @@
+<<<<<<< HEAD
 # Intensive-1.1
 
 ![](Intro.gif)
+
 
 Music Cloud is a website that recognises music around you. It is the best way to discover, explore, and share the music you love.
 
