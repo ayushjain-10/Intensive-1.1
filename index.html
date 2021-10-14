@@ -37,6 +37,7 @@
       <!-- font-awesome -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
 <body>
 
       <div class="overlay">
@@ -47,7 +48,6 @@
       <div class="wrapper">
 
             <!--------------- hero section starts here --------------->
-
             <div class="video-container">
                   <video playsinline autoplay muted loop id="bgvid">
                         <source src="video.mp4" type="video/mp4">
@@ -56,447 +56,460 @@
 
             <div class="header">
                   <h1>Identify songs around you</h1>
+                  <section id="hero">
+                        <div class="btns">
+                              <div data-aos="zoom-in" data-aos-delay="200">
+                                    <a class="glightbox play-btn"></a>
+                              </div>
+                        </div>
+                  </section>
+            </div>
+      </div>
+
+      <!--------------- hero section ends here --------------->
+
+      <!--------------- navbar starts here --------------->
+
+      <nav class="nav">
+            <span id="brand">
+                  <a href="index.html">Music Cloud</a>
+            </span>
+
+            <ul id="menu">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About us</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#team">Genres</a></li>
+                  <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div id="toggle">
+                  <div class="span">menu</div>
             </div>
 
-            <!--------------- hero section ends here --------------->
+      </nav>
 
-            <!--------------- navbar starts here --------------->
+      <div id="resize">
+            <div class="close-btn">close</div>
 
-            <nav class="nav">
-                  <span id="brand">
-                        <a href="index.html">Music Cloud</a>
-                  </span>
+            <ul id="menu">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About us</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#team">Genres</a></li>
+                  <li><a href="#contact">Contact</a></li>
+            </ul>
+      </div>
 
-                  <ul id="menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Genres</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                  </ul>
+      <!--------------- navbar ends here --------------->
 
-                  <div id="toggle">
-                        <div class="span">menu</div>
-                  </div>
+      <div class="content">
 
-            </nav>
+            <!--------------- about section starts here --------------->
 
-            <div id="resize">
-                  <div class="close-btn">close</div>
+            <a name="about"></a>
 
-                  <ul id="menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Genres</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                  </ul>
-            </div>
-
-            <!--------------- navbar ends here --------------->
-
-            <div class="content">
-
-                  <!--------------- about section starts here --------------->
-
-                  <a name="about"></a>
-
-                  <section class="story">
+            <section class="story">
 
 
-                        <div class="container-fluid">
+                  <div class="container-fluid">
 
-                              <div class="section-data">
+                        <div class="section-data">
 
-                                    <div class="row">
-                                          <div class="col-md-2"></div>
-                                          <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">01
-                                          </div>
-                                          <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">About
-                                                Us</div>
-                                    </div>
-
-                                    <div class="row">
-                                          <div class="col-md-4"></div>
-                                          <div class="col-md-6 section-subheading wow fadeInUp" data-wow-delay="0.5s">
-                                                <h1>Introduction</h1>
-                                          </div>
-                                    </div>
-
-                                    <div class="row">
-                                          <div class="col-md-4"></div>
-                                          <div class="col-md-6 section-info wow fadeInUp" data-wow-delay="0.6s">Music
-                                                Cloud is a website that recognises music around you. It is the best way
-                                                to discover, explore and share the music you love.
-
-                                                In addition to indentifying music aroud you, it also picks up the
-                                                instruments that are played in the song.
-
-                                                Along with that, it will also provide lessons on how to play that song
-                                                with your desired instrument.</div>
-                                    </div>
-
-                                    <div class="row">
-                                          <div class="col-md-4"></div>
-                                          <div class="col-md-8 more wow fadeInUp" data-wow-delay="0.7s">
-                                                <button id="btn">Know more</button>
-                                          </div>
-                                    </div>
-
-                              </div>
-
-                        </div>
-
-                  </section>
-
-                  <!--------------- about section ends here --------------->
-
-                  <!--------------- services section starts here --------------->
-
-                  <a name="services"></a>
-
-                  <section class="services">
-
-                        <div class="container-fluid">
-
-                              <div class="section-data">
-
-                                    <div class="row">
-                                          <div class="col-md-2"></div>
-                                          <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">02
-                                          </div>
-                                          <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Services</div>
-                                    </div>
-
-                                    <div class="row service">
-                                          <div class="col-md-4"></div>
-                                          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
-                                                <div class="icon">
-                                                      <ion-icon name="musical-notes"></ion-icon>
-                                                </div>
-                                                <div class="icon-title">
-                                                      Identifies the song playing in background and displays lyrics in real-time.
-                                                </div>
-                                          </div>
-
-                                          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
-                                                <div class="icon">
-                                                      <ion-icon name="download"></ion-icon>
-                                                </div>
-                                                <div class="icon-title">
-                                                      Download your favourite songs and listen to them offline while on the go.
-                                                </div>
-                                          </div>
-                                    </div>
-
-                                    <div class="row service">
-                                          <div class="col-md-4"></div>
-                                          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.7s">
-                                                <div class="icon">
-                                                      <ion-icon name="cloud-upload"></ion-icon>
-                                                </div>
-                                                <div class="icon-title">
-                                                      Create your own beats and songs and share them instantly with others.
-                                                </div>
-                                          </div>
-
-                                          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.8s">
-                                                <div class="icon">
-                                                      <ion-icon name="musical-note"></ion-icon>
-                                                </div>
-                                                <div class="icon-title">
-                                                      Learn how to play different songs with the instrument of your choice.
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-
-                        </div>
-
-                  </section>
-
-                  <!--------------- services section ends here --------------->
-
-                  <!--------------- team section starts here --------------->
-
-                  <a name="team"></a>
-
-                  <section class="team">
-      
-                        <div class="container-fluid">
-      
                               <div class="row">
                                     <div class="col-md-2"></div>
-                                    <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">03</div>
-                                    <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Genres</div>
+                                    <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">01
+                                    </div>
+                                    <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">About
+                                          Us</div>
                               </div>
-      
-                              <div class="row members">
-      
+
+                              <div class="row">
                                     <div class="col-md-4"></div>
-      
+                                    <div class="col-md-6 section-subheading wow fadeInUp" data-wow-delay="0.5s">
+                                          <h1>Introduction</h1>
+                                    </div>
+                              </div>
+
+                              <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-6 section-info wow fadeInUp" data-wow-delay="0.6s">Music
+                                          Cloud is a website that recognises music around you. It is the best way
+                                          to discover, explore, and share the music you love.
+
+                                          In addition to indentifying music aroud you, it also picks up the
+                                          instruments that are played in the song.
+
+                                          Along with that, it will also provide lessons on how to play that song
+                                          with your desired instrument.</div>
+                              </div>
+
+                              <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-8 more wow fadeInUp" data-wow-delay="0.7s">
+                                          <button id="btn">Know more</button>
+                                    </div>
+                              </div>
+
+                        </div>
+
+                  </div>
+
+            </section>
+
+            <!--------------- about section ends here --------------->
+
+            <!--------------- services section starts here --------------->
+
+            <a name="services"></a>
+
+            <section class="services">
+
+                  <div class="container-fluid">
+
+                        <div class="section-data">
+
+                              <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">02
+                                    </div>
+                                    <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">
+                                          Services</div>
+                              </div>
+
+                              <div class="row service">
+                                    <div class="col-md-4"></div>
                                     <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
-                                          <div class="team-member">
-                                                <div class="team-img team-one"></div>
+                                          <div class="icon">
+                                                <ion-icon name="musical-notes"></ion-icon>
                                           </div>
-                                          <div class="team-title">
-                                                <h5>Hip-Hop</h5>
-                                                <span>Justin Bieber, Ariana Grande</span>
+                                          <div class="icon-title">
+                                                Identifies the song playing in background and displays lyrics in
+                                                real-time.
                                           </div>
                                     </div>
-      
+
                                     <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
-                                                <div class="team-member">
-                                                      <div class="team-img team-two"></div>
-                                                </div>
-                                                <div class="team-title">
-                                                      <h5>Country</h5>
-                                                      <span>Luke Combs, Carrie Underwood</span>
-                                                </div>
+                                          <div class="icon">
+                                                <ion-icon name="download"></ion-icon>
                                           </div>
-      
-                              </div>
-      
-                        </div>
-      
-                  </section>
-                                    <!--------------- team section ends here --------------->
-
-                  <!--------------- newsletter section starts here --------------->
-
-                  <section class="newsletter">
-
-                        <div class="container">
-
-                              <div class="row">
-                                    <div class="col-md-12">
-                                          <div class="news-data">
-                                                <div class="section-subheading">
-                                                      <h1 class="wow fadeInUp" data-wow-delay="0.3s">Subscribe to our
-                                                            more updates</h1>
-                                                </div>
-
-                                                <div class="input-group wow fadeInUp" data-wow-delay="0.4s">
-                                                      <input type="email" class="form-control"
-                                                            placeholder="Enter your email">
-                                                      <span class="input-group-btn">
-                                                            <button class="btn" type="submit">Subscribe</button>
-                                                      </span>
-                                                </div>
+                                          <div class="icon-title">
+                                                Download your favourite songs and listen to them offline while on
+                                                the go.
                                           </div>
                                     </div>
                               </div>
 
-                        </div>
-
-                  </section>
-
-                  <!--------------- newsletter section ends here --------------->
-
-                  <!--------------- contact section starts here --------------->
-
-                  <a name="contact"></a>
-
-                  <section class="contact">
-
-                        <div class="container-fluid">
-
-                              <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">04</div>
-                                    <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Contact us
-                                    </div>
-                              </div>
-
-
-                              <div class="row">
+                              <div class="row service">
                                     <div class="col-md-4"></div>
-                                    <div class="col-md-6">
-                                          <form action="" name="contact-form" id="contact-form" method="POST">
+                                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.7s">
+                                          <div class="icon">
+                                                <ion-icon name="cloud-upload"></ion-icon>
+                                          </div>
+                                          <div class="icon-title">
+                                                Create your own beats and songs and share them instantly with
+                                                others.
+                                          </div>
+                                    </div>
 
-                                                <ul>
+                                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.8s">
+                                          <div class="icon">
+                                                <ion-icon name="musical-note"></ion-icon>
+                                          </div>
+                                          <div class="icon-title">
+                                                Learn how to play different songs with the instrument of your
+                                                choice.
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
 
-                                                      <li class="wow fadeInUp" data-wow-delay="0.6s">
-                                                            <label for="contact-name">Name :</label>
-                                                            <div class="textarea">
-                                                                  <input type="text" name="contact-name"
-                                                                        id="contact-name" value="" required>
-                                                            </div>
-                                                      </li>
+                  </div>
 
-                                                      <br>
+            </section>
 
-                                                      <li class="wow fadeInUp" data-wow-delay="0.7s">
-                                                            <label for="contact-email">E-mail :</label>
-                                                            <div class="textarea">
-                                                                  <input type="email" name="contact-email"
-                                                                        id="contact-email" value="" required>
-                                                            </div>
-                                                      </li>
+            <!--------------- services section ends here --------------->
 
-                                                      <br>
+            <!--------------- team section starts here --------------->
 
-                                                      <li class="wow fadeInUp" data-wow-delay="0.8s">
-                                                            <label for="contact-project">Message :</label>
-                                                            <div class="textarea">
-                                                                  <textarea name="contact-project" id="contact-project"
-                                                                        rows="6" required></textarea>
-                                                            </div>
-                                                      </li>
+            <a name="team"></a>
 
-                                                </ul>
+            <section class="team">
 
-                                                <button type="submit" name="contact-submit" id="contact-submit"
-                                                      class="send wow fadeInUp" data-wow-delay="0.9s">Send
-                                                      Message</button>
+                  <div class="container-fluid">
 
-                                          </form>
+                        <div class="row">
+                              <div class="col-md-2"></div>
+                              <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">03</div>
+                              <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Genres
+                              </div>
+                        </div>
+
+                        <div class="row members">
+
+                              <div class="col-md-4"></div>
+
+                              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="team-member">
+                                          <div class="team-img team-one"></div>
+                                    </div>
+                                    <div class="team-title">
+                                          <h5>Hip-Hop</h5>
+                                          <span>Justin Bieber, Ariana Grande</span>
                                     </div>
                               </div>
 
-                        </div>
-
-                  </section>
-
-                  <!--------------- footer starts here --------------->
-
-                  <div class="footer">
-
-                        <div class="container">
-
-                              <div class="info">
-
-                                    <div class="row">
-                                          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s" id="address">
-                                                <p>Office</p>
-                                                <h4>226 Jackle Avenue</h4>
-                                                <h4>Fremont</h4>
-                                                <h4>CA 94539</h4>
-
-                                                <br><br>
-                                          </div>
-
-                                          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s" id="media">
-                                                <ul>
-                                                      <li>
-                                                            <ion-icon name="logo-facebook"></ion-icon>
-                                                      </li>
-
-                                                      <li>
-                                                            <ion-icon name="logo-instagram"></ion-icon>
-                                                      </li>
-
-                                                      <li>
-                                                            <ion-icon name="logo-twitter"></ion-icon>
-                                                      </li>
-
-                                                      <li>
-                                                            <ion-icon name="logo-youtube"></ion-icon>
-                                                      </li>
-                                                </ul>
-
-                                                <br><br>
-                                          </div>
-
-                                          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" id="mail">
-                                                <p>Employment questions?</p>
-                                                <h4>contact@musicscloud.com</h4>
-
-                                                <br><br>
-                                          </div>
+                              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="team-member">
+                                          <div class="team-img team-two"></div>
                                     </div>
-
+                                    <div class="team-title">
+                                          <h5>Country</h5>
+                                          <span>Luke Combs, Carrie Underwood</span>
+                                    </div>
                               </div>
 
                         </div>
 
                   </div>
 
-                  <!--------------- footer ends here --------------->
+            </section>
+            <!--------------- team section ends here --------------->
+
+            <!--------------- newsletter section starts here --------------->
+
+            <section class="newsletter">
+
+                  <div class="container">
+
+                        <div class="row">
+                              <div class="col-md-12">
+                                    <div class="news-data">
+                                          <div class="section-subheading">
+                                                <h1 class="wow fadeInUp" data-wow-delay="0.3s">Subscribe to our
+                                                      more updates</h1>
+                                          </div>
+
+                                          <div class="input-group wow fadeInUp" data-wow-delay="0.4s">
+                                                <input type="email" class="form-control" placeholder="Enter your email">
+                                                <span class="input-group-btn">
+                                                      <button class="btn" type="submit">Subscribe</button>
+                                                </span>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+
+            </section>
+
+            <!--------------- newsletter section ends here --------------->
+
+            <!--------------- contact section starts here --------------->
+
+            <a name="contact"></a>
+
+            <section class="contact">
+
+                  <div class="container-fluid">
+
+                        <div class="row">
+                              <div class="col-md-2"></div>
+                              <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">04</div>
+                              <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Contact us
+                              </div>
+                        </div>
+
+
+                        <div class="row">
+                              <div class="col-md-4"></div>
+                              <div class="col-md-6">
+                                    <form action="" name="contact-form" id="contact-form" method="POST">
+
+                                          <ul>
+
+                                                <li class="wow fadeInUp" data-wow-delay="0.6s">
+                                                      <label for="contact-name">Name :</label>
+                                                      <div class="textarea">
+                                                            <input type="text" name="contact-name" id="contact-name"
+                                                                  value="" required>
+                                                      </div>
+                                                </li>
+
+                                                <br>
+
+                                                <li class="wow fadeInUp" data-wow-delay="0.7s">
+                                                      <label for="contact-email">E-mail :</label>
+                                                      <div class="textarea">
+                                                            <input type="email" name="contact-email" id="contact-email"
+                                                                  value="" required>
+                                                      </div>
+                                                </li>
+
+                                                <br>
+
+                                                <li class="wow fadeInUp" data-wow-delay="0.8s">
+                                                      <label for="contact-project">Message :</label>
+                                                      <div class="textarea">
+                                                            <textarea name="contact-project" id="contact-project"
+                                                                  rows="6" required></textarea>
+                                                      </div>
+                                                </li>
+
+                                          </ul>
+
+                                          <button type="submit" name="contact-submit" id="contact-submit"
+                                                class="send wow fadeInUp" data-wow-delay="0.9s">Send
+                                                Message</button>
+
+                                    </form>
+                              </div>
+                        </div>
+
+                  </div>
+
+            </section>
+
+            <!--------------- footer starts here --------------->
+
+            <div class="footer">
+
+                  <div class="container">
+
+                        <div class="info">
+
+                              <div class="row">
+                                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s" id="address">
+                                          <p>Office</p>
+                                          <h4>226 Jackle Avenue</h4>
+                                          <h4>Fremont</h4>
+                                          <h4>CA 94539</h4>
+
+                                          <br><br>
+                                    </div>
+
+                                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s" id="media">
+                                          <ul>
+                                                <li>
+                                                      <ion-icon name="logo-facebook"></ion-icon>
+                                                </li>
+
+                                                <li>
+                                                      <ion-icon name="logo-instagram"></ion-icon>
+                                                </li>
+
+                                                <li>
+                                                      <ion-icon name="logo-twitter"></ion-icon>
+                                                </li>
+
+                                                <li>
+                                                      <ion-icon name="logo-youtube"></ion-icon>
+                                                </li>
+                                          </ul>
+
+                                          <br><br>
+                                    </div>
+
+                                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" id="mail">
+                                          <p>Employment questions?</p>
+                                          <h4>contact@musicscloud.com</h4>
+
+                                          <br><br>
+                                    </div>
+                              </div>
+
+                        </div>
+
+                  </div>
 
             </div>
+
+            <!--------------- footer ends here --------------->
 
       </div>
 
+      </div>
+</body>
 
-      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-      <script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
 
-            // navigation starts here
-            $("#toggle").click(function () {
-                  $(this).toggleClass('on');
-                  $("#resize").toggleClass("active");
+      // navigation starts here
+      $("#toggle").click(function () {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+      $("#resize ul li a").click(function () {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+      $(".close-btn").click(function () {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $(function () {
+            $(document).scroll(function () {
+                  var $nav = $(".nav");
+                  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
             });
-            $("#resize ul li a").click(function () {
-                  $(this).toggleClass('on');
-                  $("#resize").toggleClass("active");
-            });
-            $(".close-btn").click(function () {
-                  $(this).toggleClass('on');
-                  $("#resize").toggleClass("active");
-            });
+      });
 
-            $(function () {
-                  $(document).scroll(function () {
-                        var $nav = $(".nav");
-                        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-                  });
-            });
+      new WOW().init();
 
-            new WOW().init();
-
-            // Select all links with hashes
-            $('a[href*="#"]')
-                  // Remove links that don't actually link to anything
-                  .not('[href="#"]')
-                  .not('[href="#0"]')
-                  .click(function (event) {
-                        // On-page links
-                        if (
-                              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                              &&
-                              location.hostname == this.hostname
-                        ) {
-                              // Figure out element to scroll to
-                              var target = $(this.hash);
-                              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                              // Does a scroll target exist?
-                              if (target.length) {
-                                    // Only prevent default if animation is actually gonna happen
-                                    event.preventDefault();
-                                    $('html, body').animate({
-                                          scrollTop: target.offset().top
-                                    }, 1000, function () {
-                                          // Callback after animation
-                                          // Must change focus!
-                                          var $target = $(target);
-                                          $target.focus();
-                                          if ($target.is(":focus")) { // Checking if the target was focused
-                                                return false;
-                                          } else {
-                                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                                                $target.focus(); // Set focus again
-                                          };
-                                    });
-                              }
+      // Select all links with hashes
+      $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                  // On-page links
+                  if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                        &&
+                        location.hostname == this.hostname
+                  ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                              // Only prevent default if animation is actually gonna happen
+                              event.preventDefault();
+                              $('html, body').animate({
+                                    scrollTop: target.offset().top
+                              }, 1000, function () {
+                                    // Callback after animation
+                                    // Must change focus!
+                                    var $target = $(target);
+                                    $target.focus();
+                                    if ($target.is(":focus")) { // Checking if the target was focused
+                                          return false;
+                                    } else {
+                                          $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                          $target.focus(); // Set focus again
+                                    };
+                              });
                         }
-                  });
+                  }
+            });
 
 
-      </script>
-      <script type="text/javascript">
+</script>
+<script type="text/javascript">
 
-            TweenMax.to(".overlay h1", 2, {
-                  opacity: 0,
-                  y: -60,
-                  ease: Expo.easeInOut
-            })
+      TweenMax.to(".overlay h1", 2, {
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut
+      })
 
-            TweenMax.to(".overlay", 2, {
-                  delay: 1,
-                  top: "-100%",
-                  ease: Expo.easeInOut
-            })
+      TweenMax.to(".overlay", 2, {
+            delay: 1,
+            top: "-100%",
+            ease: Expo.easeInOut
+      })
 
       // TweenMax.from(".logo", 1, {
       //       delay: 2.4,
@@ -561,7 +574,6 @@
       //       y: 20,
       //       ease: Expo.easeInOut
       // })
-      </script>
-</body>
+</script>
 
 </html>

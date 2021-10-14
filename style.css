@@ -76,7 +76,7 @@ video {
 }
 
 .nav #brand a {
-      color: #fff;
+      color: #d3ae87;
       font-family: Poppins !important;
       transition: all 500ms ease-out;
 }
@@ -104,7 +104,7 @@ video {
 
 .nav #menu li a {
       font-family: Poppins !important;
-      color: rgb(156, 156, 156);
+      color: #d3ae87;
       transition: all 500ms ease-out;
 }
 
