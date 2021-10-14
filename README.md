@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Intensive-1.1
+# Music Cloud
 
 ![](Intro.gif)
 
