@@ -9,8 +9,6 @@
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="main.css">
-
 
       <!-- google fonts -->
       <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap"
@@ -18,21 +16,9 @@
 
       <!-- bootstrap -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-      <!-- icons -->
-      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
       <!-- for on scroll animations -->
       <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
-      <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
-
-      <!-- jquery -->
-      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-      <!-- greensock -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-
 
       <!-- font-awesome -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -50,7 +36,7 @@
             <!--------------- hero section starts here --------------->
             <div class="video-container">
                   <video playsinline autoplay muted loop id="bgvid">
-                        <source src="video.mp4" type="video/mp4">
+                        <source src="img/video.mp4" type="video/mp4">
                   </video>
             </div>
 
@@ -102,7 +88,6 @@
       </div>
 
       <!--------------- navbar ends here --------------->
-
       <div class="content">
 
             <!--------------- about section starts here --------------->
@@ -112,8 +97,10 @@
             <section class="story">
 
 
+
                   <div class="container-fluid">
 
+                                    
                         <div class="section-data">
 
                               <div class="row">
@@ -127,6 +114,7 @@
                               <div class="row">
                                     <div class="col-md-4"></div>
                                     <div class="col-md-6 section-subheading wow fadeInUp" data-wow-delay="0.5s">
+                                          <img src='img/logo.png' id='image' alt="logo" width="200" height="200" id='image'>
                                           <h1>Introduction</h1>
                                     </div>
                               </div>
@@ -264,8 +252,8 @@
                                           <div class="team-img team-two"></div>
                                     </div>
                                     <div class="team-title">
-                                          <h5>Country</h5>
-                                          <span>Luke Combs, Carrie Underwood</span>
+                                          <h5>Pop</h5>
+                                          <span>Dua Lipa, Ava Max</span>
                                     </div>
                               </div>
 
@@ -433,70 +421,17 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script>
+<script src="script.js" type=module></script>
+<!-- icons -->
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-      // navigation starts here
-      $("#toggle").click(function () {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-      $("#resize ul li a").click(function () {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-      $(".close-btn").click(function () {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
+      <!-- jquery -->
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-      $(function () {
-            $(document).scroll(function () {
-                  var $nav = $(".nav");
-                  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-            });
-      });
-
-      new WOW().init();
-
-      // Select all links with hashes
-      $('a[href*="#"]')
-            // Remove links that don't actually link to anything
-            .not('[href="#"]')
-            .not('[href="#0"]')
-            .click(function (event) {
-                  // On-page links
-                  if (
-                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                        &&
-                        location.hostname == this.hostname
-                  ) {
-                        // Figure out element to scroll to
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        // Does a scroll target exist?
-                        if (target.length) {
-                              // Only prevent default if animation is actually gonna happen
-                              event.preventDefault();
-                              $('html, body').animate({
-                                    scrollTop: target.offset().top
-                              }, 1000, function () {
-                                    // Callback after animation
-                                    // Must change focus!
-                                    var $target = $(target);
-                                    $target.focus();
-                                    if ($target.is(":focus")) { // Checking if the target was focused
-                                          return false;
-                                    } else {
-                                          $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                                          $target.focus(); // Set focus again
-                                    };
-                              });
-                        }
-                  }
-            });
-
-
-</script>
+      <!-- greensock -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script type="text/javascript">
 
       TweenMax.to(".overlay h1", 2, {
@@ -510,70 +445,6 @@
             top: "-100%",
             ease: Expo.easeInOut
       })
-
-      // TweenMax.from(".logo", 1, {
-      //       delay: 2.4,
-      //       opacity: 0,
-      //       y: 20,
-      //       ease: Expo.easeInOut
-      // })
-
-      // TweenMax.staggerFrom(".nav ul li", 1, {
-      //       delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
-      // }, 0.2)
-
-      // TweenMax.staggerFrom(".social-media ul li", 1, {
-      //       delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
-      // }, 0.2)
-
-      // TweenMax.from(".side-strip", 2, {
-      //       delay: 2.4,
-      //       opacity: 0,
-      //       y: 40,
-      //       ease: Expo.easeInOut
-      // })
-
-      // TweenMax.from(".row", 2, {
-      //       delay: 2.4,
-      //       opacity: 0,
-      //       x: 40,
-      //       ease: Expo.easeInOut
-      // })
-
-      // TweenMax.from(".row h6", 2, {
-      //       delay: 3,
-      //       opacity: 0,
-      //       y: 40,
-      //       ease: Expo.easeInOut
-      // })
-
-      // TweenMax.from(".row p", 2, {
-      //       delay: 3.2,
-      //       opacity: 0,
-      //       y: 20,
-      //       ease: Expo.easeInOut
-      // })
-
-      // TweenMax.from(".header h1", 2, {
-      //       delay: 3.2,
-      //       opacity: 0,
-      //       y: 20,
-      //       ease: Expo.easeInOut
-      // })
-
-      // TweenMax.from(".header p", 2, {
-      //       delay: 3.4,
-      //       opacity: 0,
-      //       y: 20,
-      //       ease: Expo.easeInOut
-      // })
-
-      // TweenMax.from(".header button", 2, {
-      //       delay: 3.6,
-      //       opacity: 0,
-      //       y: 20,
-      //       ease: Expo.easeInOut
-      // })
 </script>
 
 </html>
